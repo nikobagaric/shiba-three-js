@@ -3,12 +3,10 @@ import React from "react";
 function Header() {
   return (
     <header
-      className="height-[70px] flex-row flex
-            justify-around bg-background items-center
-             top-0"
+      className="height-[70px] justify-between flex bg-background items-center"
     >
-      <h1 className="text-primary text-[42px] w-[30px]">Shiba Inu</h1>
-      <ul className="flex">
+      <h1 className="text-primary text-[42px]">Shiba Inu</h1>
+      <ul className="flex justify-evenly w-80">
         <li>
           <a
             className="text-secondary
@@ -21,7 +19,7 @@ function Header() {
         <li>
           <a
             className="text-secondary
-            hover:text-primary ease-in-out"
+            hover:text-primary hover:ease-in-out"
             href="#feedback"
           >
             Feedback
@@ -37,6 +35,7 @@ function Header() {
           </a>
         </li>
       </ul>
+      <div />
     </header>
   );
 }
