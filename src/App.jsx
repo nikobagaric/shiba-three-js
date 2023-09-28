@@ -1,12 +1,15 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { Header } from "./components";
+import { Header, Hero, About, Feedback, Contact, Loader } from "./components";
 
 function App() {
   return (
     <BrowserRouter>
-    <div className=""></div>
       <Header/>
+      <Hero />
+      <About />
+      <Feedback />
+      <Contact />
     </BrowserRouter>
   );
 }

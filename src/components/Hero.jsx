@@ -1,8 +1,11 @@
 import React from 'react'
+import ShibaCanvas from './canvas/Shiba'
 
 function Hero() {
   return (
-    <div>Hero</div>
+    <div className='h-[1080px]'>
+      <ShibaCanvas />
+    </div>
   )
 }
 

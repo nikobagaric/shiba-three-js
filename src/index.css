@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Outfit;
+  src: url('/fonts/Outfit-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: OrlegaOne;
+  src: url('/fonts/OrelegaOne-Regular.ttf');
+}
+
 *,
 *::before,
 *::after {
@@ -13,7 +22,9 @@
 }
 body {
   line-height: 1.5;
+  font-family: OrlegaOne;
   -webkit-font-smoothing: antialiased;
+  background: #e8e3dc;
 }
 img,
 picture,
