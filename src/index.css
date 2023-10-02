@@ -53,3 +53,15 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+.font-outfit {
+  font-family: Outfit;
+}
+
+.text-gradient {
+  background-image: linear-gradient(to right bottom, #d6673a, #d26e3b, #ce743e, #cb7a41, #c77f45);
+  -webkit-background-clip: text;
+  background-clip: text; /** for compatibility **/
+  -webkit-text-fill-color: transparent;
+  transition: ease-in-out 0.2ms;
+}

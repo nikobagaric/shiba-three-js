@@ -13,8 +13,8 @@ const Shiba = ({ isMobile }) => {
       <primitive
         object={shiba.scene}
         shadows
-        scale={isMobile ? 2 : 2}
-        position={[0, 0, 0]}
+        scale={isMobile ? 0.45 : 0.45}
+        position={[0, 0.2, 0.2]}
         rotation={[0, 0, 0]}
       />
     </mesh>
@@ -46,15 +46,16 @@ const ShibaCanvas = () => {
   }, []);
 
   return (
-    <Canvas
+      <Canvas
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 20, 5], fov: 25 }}
+      camera={{ position: [-2,0,0], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
+          autoRotate
           enableZoom={false}
           enablePan={false}
           maxPolarAngle={Math.PI / 2}
