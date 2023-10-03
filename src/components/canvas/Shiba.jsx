@@ -46,11 +46,11 @@ const ShibaCanvas = () => {
   }, []);
 
   return (
-      <Canvas
+    <Canvas
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [-2,0,0], fov: 25 }}
+      camera={{ position: [-2, 0, 0], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
