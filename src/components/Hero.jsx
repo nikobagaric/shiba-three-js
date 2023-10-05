@@ -9,8 +9,8 @@ import { styles } from "../styles";
 function Hero() {
   return (
     <div className="flex flex-col lg:flex-row justify-evenly items-center lg:items-stretch mt-32">
-      <div className="flex flex-col w-[600px] justify-around">
-        <motion.div>
+      <div className="flex flex-col w-[600px] justify-around lg:items-stretch items-center">
+        <motion.div className="lg:block flex items-center flex-col">
           <h3 className={styles.heroSubText}>A three.js web-project</h3>
           <h1 className={styles.heroHeadText}>Shiba Inu</h1>
           <p className="text-[48px] leading-[1.05em]">

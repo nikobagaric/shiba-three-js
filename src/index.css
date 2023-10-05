@@ -10,7 +10,9 @@
   font-family: OrlegaOne;
   src: url("/fonts/OrelegaOne-Regular.ttf");
 }
-
+html {
+  scroll-behavior: smooth;
+}
 *,
 *::before,
 *::after {
