@@ -9,12 +9,12 @@ const Shiba = ({ isMobile }) => {
 
   return (
     <mesh>
-      <ambientLight intensity={0.65} />
+      <ambientLight intensity={2.5} />
       <primitive
         object={shiba.scene}
         shadows
-        scale={isMobile ? 0.45 : 0.45}
-        position={[0, 0.2, 0.2]}
+        scale={isMobile ? 0.6 : 0.7}
+        position={[0, -0.05, 0]}
         rotation={[0, 0, 0]}
       />
     </mesh>
@@ -59,7 +59,6 @@ const ShibaContactCanvas = () => {
           enableZoom={false}
           enablePan={false}
           maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
         />
         <Shiba isMobile={isMobile} />
       </Suspense>
